@@ -13,6 +13,10 @@ plugins {
 apply<com.ivy.buildsrc.IvyPlugin>()
 
 dependencies {
+    implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    implementation("com.willowtreeapps.assertk:assertk-jvm:0.24")
+    AssertK()
+    JUnit5()
     Hilt()
     implementation(project(":common:main"))
     implementation(project(":parser"))
